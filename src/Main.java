@@ -85,6 +85,46 @@ public class Main {
         var WeightLossTypeB = (sportManWeightLoss * 1000) / sportManTypeB;
         System.out.println("Дней уйдет чтобы сбросить " + sportManWeightLoss +" кг. " + WeightLossTypeA + " дней." + " теряя в весе "  +sportManTypeA + " гр.");
         System.out.println("Дней уйдет чтобы сбросить " + sportManWeightLoss +" кг. " + WeightLossTypeB + " дней." + " теряя в весе "  +sportManTypeB + " гр.");
+        //### **Задача 5.**
+        //
+        //Отойдем от спорта и представим, что мы работаем в большой компании, штат которой состоит из нескольких сотен сотрудников.
+        // В компании есть правило, что чем дольше сотрудник работает в компании, тем ценнее он для бизнеса. Поэтому сотрудники,
+        // которые работают в компании дольше 3 лет, получают повышение зарплаты раз в год. Каждый год повышение составляет 10% от текущей зарплаты.
+        //
+        //К вам пришел руководитель с задачей автоматизировать повышение зарплаты, а также провести расчет для следующих сотрудников:
+        //
+        //Маша получает 67 760 рублей в месяц
+        //
+        //Денис получает 83 690 рублей в месяц
+        //
+        //Кристина получает 76 230 рублей в месяц
+        //
+        //Каждому нужно увеличить зарплату на 10% от текущей месячной. Дополнительно руководитель попросил посчитать разницу между годовым доходом с нынешней зарплатой и после повышения.
+        // Посчитайте, сколько будет получать каждый из сотрудников, а также разницу между годовым доходом до и после повышения.
+        //
+        //Выведите в консоль информацию по каждому сотруднику.
+        //
+        //Например, “Маша теперь получает **** рублей. Годовой доход вырос на **** рублей”.
+        var moneyMonthWorkerMasha = 67760;
+        var moneyMonthWorkerDenis = 83690;
+        var moneyMonthWorkerCristina = 76230;
+        var moneyMonthWorkerIncrease = 10;
+        var monthInYer = 12;
+        var moneyMonthWorkerMashaIncrease = moneyMonthWorkerMasha / moneyMonthWorkerIncrease + moneyMonthWorkerMasha;
+        var YerMonthWorkerMashaIncrease = moneyMonthWorkerMashaIncrease * monthInYer;
+        var YerMonthWorkerMashaTotalIncrease = (YerMonthWorkerMashaIncrease) - (moneyMonthWorkerMasha * monthInYer);
+        System.out.println("Маша теперь получает в месяц. "+ moneyMonthWorkerMashaIncrease + " рублей." + " Маша получает в год " + YerMonthWorkerMashaIncrease + " рублей." + " Сумма прибавки " + YerMonthWorkerMashaTotalIncrease + " рублей.");
+
+        var moneyMonthWorkerDenisIncrease = moneyMonthWorkerDenis / moneyMonthWorkerIncrease + moneyMonthWorkerDenis;
+        var YerMonthWorkerDenisIncrease = moneyMonthWorkerDenisIncrease * monthInYer;
+        var YerMonthWorkerDenisTotalIncrease = (YerMonthWorkerDenisIncrease) - (moneyMonthWorkerDenis * monthInYer);
+        System.out.println("Денис теперь получает в месяц. "+ moneyMonthWorkerDenisIncrease + " рублей." + " Денис получает в год " + YerMonthWorkerDenisIncrease + " рублей." + " Сумма прибавки " + YerMonthWorkerDenisTotalIncrease + " рублей.");
+
+        var moneyMonthWorkerCristinaIncrease = moneyMonthWorkerCristina / moneyMonthWorkerIncrease + moneyMonthWorkerCristina;
+        var YerMonthWorkerCristinaIncrease = moneyMonthWorkerCristinaIncrease * monthInYer;
+        var YerMonthWorkerCristinaTotalIncrease = (YerMonthWorkerCristinaIncrease) - (moneyMonthWorkerCristina * monthInYer);
+        System.out.println("Кристина теперь получает в месяц. "+ moneyMonthWorkerCristinaIncrease + " рублей." + " Кристина получает в год " + YerMonthWorkerCristinaIncrease + " рублей." + " Сумма прибавки " + YerMonthWorkerCristinaTotalIncrease + " рублей.");
+
 
 
     }
